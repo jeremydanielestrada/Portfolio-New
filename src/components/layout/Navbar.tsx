@@ -1,4 +1,7 @@
 import { Button } from "../common/Button";
+import { Menu } from "lucide-react";
+import { X } from "lucide-react";
+import { useState } from "react";
 
 const navLinks: { label: string; href: string }[] = [
   { label: "About", href: "#about" },
@@ -8,6 +11,7 @@ const navLinks: { label: string; href: string }[] = [
 ];
 
 export const Navbar = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
   return (
     <header className="fixed top-0 left-0 bg-transparent py-5 right-0">
       <nav className="container mx-auto px-6 flex items-center justify-between">
@@ -18,7 +22,7 @@ export const Navbar = () => {
           JDE<span className="text-primary">.</span>
         </a>
         {/* Desktop Nav */}
-        <div className="flex items-center gap-1">
+        <div className="hidden md:flex items-center gap-1">
           <div className="glass rounded-full  px-2 py-1 flex items-center gap-1">
             {navLinks.map((link, index) => (
               <a
@@ -32,10 +36,37 @@ export const Navbar = () => {
           </div>
         </div>
         {/* CTA-BUTTON */}
-        <div>
+        <div className="hidden md:block">
           <Button size="sm">Contact Me</Button>
         </div>
+
+        {/* Mobile Menu  Button */}
+        <button
+          className="md:hidden px-2 text-foreground cursor-pointer"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        >
+          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
       </nav>
+
+      {/* Mobile Menu */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden glass-strong animate-fade-in">
+          <div className="container  mx-auto px-6 flex flex-col gap-4 py-6">
+            {navLinks.map((link, index) => (
+              <a
+                key={index}
+                href={link.href}
+                className="text-lg text-muted-foreground hover:text-foreground rounded-full hover:bg-surface px-4 py-2"
+              >
+                {link.label}
+              </a>
+            ))}
+
+            <Button size="sm">Contact Me</Button>
+          </div>
+        </div>
+      )}
     </header>
   );
 };
