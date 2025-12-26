@@ -90,11 +90,12 @@ export const Hero = () => {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I&apos;m Jeremy, an aspiring web and app developer
-                passionate about building modern, user-friendly applications. I
-                enjoy solving problems through code and continuously learning
-                new technologies. I&apos;m a quick learner, a team player, and
-                motivated to grow into a well-rounded developer.
+                Hi, I&apos;m Jeremy Daniel Estrada, an aspiring web and app
+                developer passionate about building modern, user-friendly
+                applications. I enjoy solving problems through code and
+                continuously learning new technologies. I&apos;m a quick
+                learner, a team player, and motivated to grow into a
+                well-rounded developer.
               </p>
             </div>
 
