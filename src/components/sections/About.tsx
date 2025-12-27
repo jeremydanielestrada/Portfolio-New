@@ -98,7 +98,7 @@ export const About = () => {
                 <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
                 <p className="text-sm text-muted-foreground">
                   {item.desciprtion}
-                </p>
+                </p> 
               </div>
             ))}
           </div>
