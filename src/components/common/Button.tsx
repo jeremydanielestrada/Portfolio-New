@@ -2,7 +2,9 @@ interface ButtonProps {
   children: React.ReactNode;
   onClick?: () => void;
   size: string;
+  disabled?: boolean;
   className?: string;
+  type?: "button" | "submit" | "reset";
 }
 
 export const Button = ({
@@ -10,6 +12,8 @@ export const Button = ({
   onClick,
   size = "default",
   className,
+  disabled,
+  type,
 }: ButtonProps) => {
   const baseClasses =
     "relative overflow-hidden rounded-full font-medium focus:outline-none  focus-visible:ring-2 focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/50 ";
@@ -21,7 +25,12 @@ export const Button = ({
   };
   const classes = `${baseClasses} ${sizeClasses[size]} ${className}`;
   return (
-    <button onClick={onClick} className={classes}>
+    <button
+      onClick={onClick}
+      className={classes}
+      disabled={disabled}
+      type={type}
+    >
       <span className="relative flex items-center justify-center gap-2">
         {children}
       </span>
