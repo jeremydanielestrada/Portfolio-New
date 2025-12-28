@@ -26,6 +26,7 @@ const skills = [
   { name: "Tailwind CSS", icon: Paintbrush },
   { name: "Git", icon: GitBranch },
   { name: "GitHub Actions", icon: GitBranch },
+  { name: "Postman", icon: GitBranch },
 ];
 
 export const Hero = () => {
