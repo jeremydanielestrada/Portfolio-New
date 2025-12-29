@@ -23,20 +23,20 @@ export const Experience = () => {
     },
 
     {
-      period: "Sep 2025 - Nov 2025",
-      role: "Full-Stack developer",
+      period: "Sep 2025 – Nov 2025",
+      role: "Full-Stack Developer — Capstone Project (Hospital Management System)",
       company: "Freelance",
       description:
-        "Developed a web-based hospital management system to streamline and automate the patient discharge process. The system improves communication between healthcare staff, tracks patient progress across discharge stages, and provides analytics and reporting for better operational insights.",
+        "Developed a web-based hospital management system to streamline and automate the patient discharge process. Improved communication between healthcare staff by implementing discharge workflow tracking. Built reporting and analytics features to support operational insights.",
       technologies: ["Vue", "Vuetify", "Supabase", "Pinia"],
     },
 
     {
-      period: "May 2025 - June 2025",
-      role: "Full-Stack developer",
+      period: "May 2025 – June 2025",
+      role: "Full-Stack Developer — Project-Based/Academic Clients",
       company: "Freelance",
       description:
-        "Built and delivered web applications for clients through commission-based projects. Translated requirements into working features, collaborated through feedback, and deployed applications using modern web technologies.",
+        "Built and delivered web applications for student-led projects based on defined requirements. Translated project needs into functional features and user-friendly interfaces. Collaborated with peers to iterate on features through feedback and testing.",
       technologies: ["Vue", "Vuetify", "Supabase", "Pinia"],
     },
   ];
