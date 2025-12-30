@@ -8,17 +8,19 @@ const testimonials = [
     author: "Project Client",
     role: "Commission-Based Project",
   },
+
   {
     quote:
       "Working with Jeremy was a smooth experience. He showed strong problem-solving skills and a clear understanding of both frontend and backend development.",
     author: "Collaborator",
     role: "Development Partner",
   },
+
   {
     quote:
-      "Jeremy demonstrated great attention to detail and a strong willingness to learn. His ability to turn ideas into working solutions made a real difference to the project.",
-    author: "Team Lead",
-    role: "Project Review",
+      "Jeremy delivers tasks quickly and consistently completes work ahead of deadlines. Communication was smooth, and the quality of work exceeded expectations.",
+    author: "Freelance Client",
+    role: "Commission-Based Project",
   },
 ];
 
