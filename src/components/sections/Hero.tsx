@@ -76,7 +76,7 @@ export const Hero = () => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Aspiring Junior Developer
+                Junior Developer
               </span>
             </div>
             {/* Headline */}
@@ -91,12 +91,11 @@ export const Hero = () => {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I&apos;m Jeremy Daniel Estrada, an aspiring web and app
-                developer passionate about building modern, user-friendly
-                applications. I enjoy solving problems through code and
-                continuously learning new technologies. I&apos;m a quick
-                learner, a team player, and motivated to grow into a
-                well-rounded developer.
+                Hi, I&apos;m Jeremy Daniel Estrada, an junior developer
+                passionate about building modern, user-friendly applications. I
+                enjoy solving problems through code and continuously learning
+                new technologies. I&apos;m a quick learner, a team player, and
+                motivated to grow into a well-rounded developer.
               </p>
             </div>
 
