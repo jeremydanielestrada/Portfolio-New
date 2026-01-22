@@ -80,6 +80,16 @@ const projects = [
     link: "",
     github: "https://github.com/jeremydanielestrada/PMS-frontend",
   },
+
+  {
+    title: "Automated Hospital Discharge Management System (AHDMS)",
+    description:
+      "A comprehensive web-based hospital management system designed to streamline and automate the patient discharge workflow. The system facilitates efficient communication between healthcare staff, tracks patient progress through discharge stages, and provides detailed analytics and reporting capabilities.",
+    image: "/projects/medi-clear.png",
+    tags: ["Vue", "Vuetify", "Supabase", "Pinia"],
+    link: "",
+    github: "https://github.com/rvgonzales0426/MediClear",
+  },
 ];
 
 export const Projects = () => {
